@@ -1,7 +1,7 @@
 {
     "actorSpecification": 1,
     "name": "b2b-reviews-scraper",
-    "title": "G2, Trustpilot & Capterra B2B Software Reviews & Sentiment Scraper",
+    "title": "G2, Trustpilot & Capterra B2B Reviews Scraper - Competitor Sentiment Analysis",
     "description": "Extract customer reviews, user complaints, pros, cons, star ratings, and competitor sentiment across G2, Trustpilot, Capterra, and SaaS review platforms.",
     "version": "0.0",
     "meta": {

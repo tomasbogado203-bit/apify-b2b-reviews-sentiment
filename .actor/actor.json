@@ -1,0 +1,54 @@
+{
+    "actorSpecification": 1,
+    "name": "b2b-software-reviews-sentiment-scraper",
+    "title": "G2, Trustpilot & Capterra B2B Software Reviews & Sentiment Scraper",
+    "description": "Extract customer reviews, user complaints, pros, cons, star ratings, and competitor sentiment across G2, Trustpilot, Capterra, and SaaS review platforms.",
+    "version": "1.0.0",
+    "meta": {
+        "templateId": "python-start"
+    },
+    "dockerfile": "../Dockerfile",
+    "readme": "../README.md",
+    "input": "./input_schema.json",
+    "storages": {
+        "dataset": {
+            "actorSpecification": 1,
+            "title": "B2B Software Reviews Dataset",
+            "description": "Customer feedback, ratings, and competitor sentiment.",
+            "views": {
+                "overview": {
+                    "title": "Overview",
+                    "transformation": {
+                        "fields": [
+                            "softwareName",
+                            "reviewTitle",
+                            "rating",
+                            "sentiment",
+                            "sourcePlatform",
+                            "reviewerRole",
+                            "reviewText",
+                            "reviewUrl"
+                        ]
+                    },
+                    "display": {
+                        "component": "table",
+                        "columns": {
+                            "softwareName": { "label": "Software" },
+                            "reviewTitle": { "label": "Review Title" },
+                            "rating": { "label": "Rating" },
+                            "sentiment": { "label": "Sentiment" },
+                            "sourcePlatform": { "label": "Platform" },
+                            "reviewerRole": { "label": "Reviewer" },
+                            "reviewUrl": { "label": "URL" }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "categories": [
+        "BUSINESS",
+        "MARKETING",
+        "DATA_PROCESSING"
+    ]
+}

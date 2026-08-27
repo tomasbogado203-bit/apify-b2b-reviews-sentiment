@@ -1,0 +1,35 @@
+{
+    "title": "B2B Software Reviews Scraper Input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "softwareList": {
+            "title": "SaaS Products / Software Names",
+            "type": "array",
+            "description": "Software products or competitor names to extract reviews for (e.g. 'HubSpot', 'Salesforce', 'Notion', 'Shopify', 'Slack', 'Zapier').",
+            "editor": "stringList",
+            "prefill": ["Notion", "HubSpot CRM", "Shopify"]
+        },
+        "platforms": {
+            "title": "Review Platforms",
+            "type": "array",
+            "description": "Review platforms to scrape.",
+            "editor": "select",
+            "items": {
+                "type": "string",
+                "enum": ["all", "g2", "trustpilot", "capterra"],
+                "enumTitles": ["All Review Platforms", "G2.com", "Trustpilot", "Capterra"]
+            },
+            "default": ["all"]
+        },
+        "maxReviewsPerSoftware": {
+            "title": "Max Reviews per Software",
+            "type": "integer",
+            "description": "Maximum number of reviews to extract per product.",
+            "minimum": 1,
+            "maximum": 5000,
+            "default": 30
+        }
+    },
+    "required": ["softwareList"]
+}

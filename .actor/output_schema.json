@@ -1,0 +1,14 @@
+{
+    "actorOutputSchemaVersion": 1,
+    "title": "Actor Results Dataset Output",
+    "description": "Structured dataset containing the extracted records, leads, or data items.",
+    "type": "object",
+    "properties": {
+        "resultsDataset": {
+            "type": "string",
+            "title": "Results Dataset",
+            "description": "Direct access to the dataset containing the scraped results.",
+            "editor": "dataset"
+        }
+    }
+}

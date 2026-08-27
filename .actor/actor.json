@@ -33,13 +33,27 @@
                     "display": {
                         "component": "table",
                         "columns": {
-                            "softwareName": { "label": "Software" },
-                            "reviewTitle": { "label": "Review Title" },
-                            "rating": { "label": "Rating" },
-                            "sentiment": { "label": "Sentiment" },
-                            "sourcePlatform": { "label": "Platform" },
-                            "reviewerRole": { "label": "Reviewer" },
-                            "reviewUrl": { "label": "URL" }
+                            "softwareName": {
+                                "label": "Software"
+                            },
+                            "reviewTitle": {
+                                "label": "Review Title"
+                            },
+                            "rating": {
+                                "label": "Rating"
+                            },
+                            "sentiment": {
+                                "label": "Sentiment"
+                            },
+                            "sourcePlatform": {
+                                "label": "Platform"
+                            },
+                            "reviewerRole": {
+                                "label": "Reviewer"
+                            },
+                            "reviewUrl": {
+                                "label": "URL"
+                            }
                         }
                     }
                 }
@@ -50,5 +64,6 @@
         "BUSINESS",
         "MARKETING",
         "DATA_PROCESSING"
-    ]
+    ],
+    "output": "./output_schema.json"
 }
